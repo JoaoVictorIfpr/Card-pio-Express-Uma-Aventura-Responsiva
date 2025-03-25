@@ -64,9 +64,13 @@ nav ul li a:hover {
 /* Estiliza a área principal do conteúdo */
 main {
     padding: 20px; /* Espaçamento interno */
+}
+
+/* Ajusta a div do cardápio */
+#cardapio {
     display: flex; /* Usa o modelo flexível */
-    flex-wrap: wrap; /* Permite a quebra de linha dos elementos */
-    justify-content: space-around; /* Distribui os elementos uniformemente */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens */
 }
 
 /* Estiliza os títulos de seção dentro do main */
@@ -129,52 +133,4 @@ footer {
 }
 
 /* Responsividade para telas menores que 800px */
-@media (max-width: 800px) {
-    main {
-        flex-direction: column; /* Coloca os artigos em coluna */
-        align-items: center; /* Centraliza os artigos */
-    }
-
-    nav ul li a {
-        font-size: 14px; /* Reduz o tamanho do texto de navegação */
-    }
-
-    header .nome h1 {
-        font-size: 20px; /* Reduz o tamanho do título */
-    }
-}
-
-/* Responsividade para telas menores que 400px */
-@media (max-width: 400px) {
-    nav ul li a {
-        font-size: 8px; /* Reduz ainda mais o tamanho do menu */
-    }
-
-    header .nome h1 {
-        font-size: 13px; /* Reduz o tamanho do título */
-    }
-}
-
-/* Ajustes adicionais para telas menores que 200px */
-@media (max-width: 200px) {
-    header {
-        flex-direction: column; /* Empilha os elementos do cabeçalho */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    header .imglogo img {
-        width: 60px; /* Diminui o tamanho da logo */
-    }
-
-    header .nome h1 {
-        font-size: 14px; /* Ajusta o tamanho do título */
-    }
-
-    nav ul li a {
-        font-size: 12px; /* Ajusta o tamanho do menu */
-    }
-
-    main h2 {
-        font-size: 10px; /* Reduz o tamanho dos títulos das seções */
-    }
-} 
+@media
