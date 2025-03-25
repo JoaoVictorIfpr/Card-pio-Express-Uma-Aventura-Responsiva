@@ -6,8 +6,35 @@
     <title>Cardápio</title>
 </head>
 <body>
-    <div id="cardapio"></div> <!-- Esta div será preenchida pelo JavaScript -->
-    
-    <script src="script.js"></script> <!-- Arquivo de script JavaScript -->
+    <!-- Tag <header>: Agrupando o conteúdo introdutório com o logotipo e nome do restaurante -->
+    <header>
+        <div class="imglogo">
+            <img src="img/Logo_Churrascaria_Restaurante_-removebg-preview.png" alt="Logo Restaurante">
+        </div>
+        <div class="nome">
+            <h1>O que Não Mata Engorda</h1>
+        </div>
+    </header>
+
+    <!-- Tag <nav>: Área de navegação para as seções do cardápio -->
+    <nav>
+        <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#pratos-principais">Principais</a></li>
+            <li><a href="#sobremesas">Sobremesas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tag <main>: Contém o cardápio, será preenchido dinamicamente com JavaScript -->
+    <main>
+        <div id="cardapio"></div> <!-- A div que será preenchida -->
+    </main>
+
+    <!-- Tag <footer>: Informações de copyright -->
+    <footer>
+        © O que não Mata Engorda 2024
+    </footer>
+
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
 </body>
 </html>
