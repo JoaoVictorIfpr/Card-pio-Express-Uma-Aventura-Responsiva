@@ -1,185 +1,180 @@
+/* Estiliza o corpo da página */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff8f0;
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento interno padrão */
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal da página */
+    background-color: #fff8f0; /* Define a cor de fundo da página */
 }
 
+/* Estiliza o cabeçalho da página */
 header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    color: white;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Aplica um degradê no fundo */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px; /* Espaçamento interno de 20px */
+    color: white; /* Cor do texto no cabeçalho */
 }
 
+/* Ajusta o tamanho do logo no cabeçalho */
 header .imglogo img {
-    width: 90px;
+    width: 90px; /* Define a largura da imagem do logo */
 }
 
+/* Estiliza o título principal no cabeçalho */
 header .nome h1 {
-    font-size: 28px;
-    margin: 0;
+    font-size: 28px; /* Define o tamanho da fonte */
+    margin: 0; /* Remove a margem ao redor do título */
 }
 
+/* Estiliza a barra de navegação */
 nav {
-    background-color: #ff6347;
-    padding: 10px 0;
+    background-color: #ff6347; /* Define a cor de fundo */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
 }
 
+/* Remove a formatação padrão da lista de navegação */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove as margens padrão */
+    display: flex; /* Usa o modelo flexível para alinhar os itens */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+    flex-wrap: wrap; /* Permite a quebra de linha em telas menores */
 }
 
+/* Estiliza os itens da lista de navegação */
 nav ul li {
-    margin: 5px 10px;
+    margin: 5px 10px; /* Define margem ao redor dos itens da lista */
 }
 
+/* Estiliza os links de navegação */
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s; /* Efeito de transição na cor do link */
 }
 
+/* Altera a cor do link ao passar o mouse */
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Altera a cor do link para dourado */
 }
 
+/* Estiliza a área principal do conteúdo */
 main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Usa o modelo flexível */
+    flex-wrap: wrap; /* Permite a quebra de linha dos elementos */
+    justify-content: space-around; /* Distribui os elementos uniformemente */
 }
 
+/* Estiliza os títulos de seção dentro do main */
 main h2 {
-    font-size: 32px;
-    color: #ff4500;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 32px; /* Tamanho do título */
+    color: #ff4500; /* Cor laranja avermelhado */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estiliza os artigos (cada item do cardápio) */
 article {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 20px;
-    padding: 20px;
-    max-width: 350px;
-    transition: transform 0.3s;
+    background: white; /* Fundo branco */
+    border-radius: 16px; /* Arredonda as bordas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas */
+    margin: 20px; /* Margem externa */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 350px; /* Largura máxima do artigo */
+    transition: transform 0.3s; /* Transição suave para animação */
 }
 
+/* Efeito ao passar o mouse no artigo */
 article:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Levanta o artigo em 10px */
 }
 
+/* Estiliza as imagens dentro dos artigos */
 article img {
-    width: 100%;
-    border-radius: 12px;
+    width: 100%; /* Imagem ocupa toda a largura do artigo */
+    border-radius: 12px; /* Arredonda os cantos da imagem */
 }
 
+/* Estiliza o título dos artigos */
 article h1 {
-    font-size: 24px;
-    color: #333;
-    margin: 15px 0;
+    font-size: 24px; /* Tamanho do título */
+    color: #333; /* Cor cinza escuro */
+    margin: 15px 0; /* Margem superior e inferior */
 }
 
+/* Estiliza os parágrafos dentro dos artigos */
 article p {
-    font-size: 16px;
-    color: #666;
+    font-size: 16px; /* Tamanho do texto */
+    color: #666; /* Cor cinza médio */
 }
 
+/* Estiliza o último parágrafo (preço) dos artigos */
 article p:last-child {
-    font-size: 20px;
-    color: #ff4500;
-    font-weight: bold;
+    font-size: 20px; /* Tamanho maior para destaque */
+    color: #ff4500; /* Cor laranja avermelhado */
+    font-weight: bold; /* Texto em negrito */
 }
 
+/* Estiliza o rodapé da página */
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #ff6347;
-    color: white;
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #ff6347; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
 }
 
+/* Responsividade para telas menores que 800px */
 @media (max-width: 800px) {
     main {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Coloca os artigos em coluna */
+        align-items: center; /* Centraliza os artigos */
     }
 
     nav ul li a {
-        font-size: 14px;
+        font-size: 14px; /* Reduz o tamanho do texto de navegação */
     }
 
     header .nome h1 {
-        font-size: 20px;
+        font-size: 20px; /* Reduz o tamanho do título */
     }
 }
+
+/* Responsividade para telas menores que 400px */
 @media (max-width: 400px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul li a {
-        font-size: 8px;
+        font-size: 8px; /* Reduz ainda mais o tamanho do menu */
     }
 
     header .nome h1 {
-        font-size: 13px;
+        font-size: 13px; /* Reduz o tamanho do título */
     }
 }
 
-/* Ajuste de responsividade para telas menores */
+/* Ajustes adicionais para telas menores que 200px */
 @media (max-width: 200px) {
     header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
+        flex-direction: column; /* Empilha os elementos do cabeçalho */
+        text-align: center; /* Centraliza o texto */
     }
 
     header .imglogo img {
-        width: 60px; /* Ajusta o tamanho da logo */
+        width: 60px; /* Diminui o tamanho da logo */
     }
 
     header .nome h1 {
-        font-size: 14px; /* Reduz o tamanho do título */
+        font-size: 14px; /* Ajusta o tamanho do título */
     }
 
     nav ul li a {
         font-size: 12px; /* Ajusta o tamanho do menu */
     }
 
-    main {
-        padding: 10px;
+    main h2 {
+        font-size: 10px; /* Reduz o tamanho dos títulos das seções */
     }
-
-    main .lanches, main .pizzas, main .bebidas {
-        width: 100%; /* Ocupa a largura total */
-    }
-
-    footer {
-        font-size: 10px; /* Ajusta o tamanho do rodapé */
-    }
-    main h2{
-        font-size: 10px;
-    }
-}
+} 
