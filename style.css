@@ -1,185 +1,155 @@
 /* Estiliza o corpo da página */
 body {
-    margin: 0; /* Remove as margens padrão */
-    padding: 0; /* Remove o preenchimento interno padrão */
-    font-family: 'Poppins', sans-serif; /* Define a fonte principal da página */
-    background-color: #fff8f0; /* Define a cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f0;
 }
 
 /* Estiliza o cabeçalho da página */
 header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Aplica um degradê no fundo */
-    display: flex; /* Usa o modelo de layout flexível */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    padding: 20px; /* Espaçamento interno de 20px */
-    color: white; /* Cor do texto no cabeçalho */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
 }
 
 /* Ajusta o tamanho do logo no cabeçalho */
 header .imglogo img {
-    width: 90px; /* Define a largura da imagem do logo */
+    width: 90px;
 }
 
 /* Estiliza o título principal no cabeçalho */
 header .nome h1 {
-    font-size: 28px; /* Define o tamanho da fonte */
-    margin: 0; /* Remove a margem ao redor do título */
+    font-size: 28px;
+    margin: 0;
 }
 
 /* Estiliza a barra de navegação */
 nav {
-    background-color: #ff6347; /* Define a cor de fundo */
-    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    background-color: #ff6347;
+    padding: 10px 0;
 }
 
 /* Remove a formatação padrão da lista de navegação */
 nav ul {
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove as margens padrão */
-    display: flex; /* Usa o modelo flexível para alinhar os itens */
-    justify-content: center; /* Centraliza os itens no eixo principal */
-    flex-wrap: wrap; /* Permite a quebra de linha em telas menores */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Estiliza os itens da lista de navegação */
 nav ul li {
-    margin: 5px 10px; /* Define margem ao redor dos itens da lista */
+    margin: 5px 10px;
 }
 
 /* Estiliza os links de navegação */
 nav ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Define a cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    transition: color 0.3s; /* Efeito de transição na cor do link */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 /* Altera a cor do link ao passar o mouse */
 nav ul li a:hover {
-    color: #ffd700; /* Altera a cor do link para dourado */
+    color: #ffd700;
 }
 
 /* Estiliza a área principal do conteúdo */
 main {
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px;
 }
 
-/* Ajusta a div do cardápio */
+/* Ajusta a div do cardápio para itens lado a lado */
 #cardapio {
-    display: flex; /* Usando flexbox */
-    flex-direction: column; /* Organiza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens no eixo principal */
-    align-items: center; /* Alinha os itens no centro do eixo transversal */
-}
-
-/* Estiliza os títulos de seção dentro do main */
-main h2 {
-    font-size: 32px; /* Tamanho do título */
-    color: #ff4500; /* Cor laranja avermelhado */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    text-align: center; /* Centraliza o texto */
+    display: flex;
+    flex-wrap: wrap;  /* Permite quebra de linha */
+    justify-content: space-evenly; /* Distribui os artigos igualmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
 }
 
 /* Estiliza os artigos (cada item do cardápio) */
 article {
-    background: white; /* Fundo branco */
-    border-radius: 16px; /* Arredonda as bordas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas */
-    margin: 20px; /* Margem externa */
-    padding: 20px; /* Espaçamento interno */
-    max-width: 350px; /* Largura máxima do artigo */
-    transition: transform 0.3s; /* Transição suave para animação */
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px; /* Largura máxima */
+    width: 100%; /* Garante que o artigo ocupe toda a largura disponível até o max-width */
+    transition: transform 0.3s;
 }
 
 /* Efeito ao passar o mouse no artigo */
 article:hover {
-    transform: translateY(-10px); /* Levanta o artigo em 10px */
+    transform: translateY(-10px);
 }
 
 /* Estiliza as imagens dentro dos artigos */
 article img {
-    width: 100%; /* Imagem ocupa toda a largura do artigo */
-    border-radius: 12px; /* Arredonda os cantos da imagem */
+    width: 100%;
+    border-radius: 12px;
 }
 
 /* Estiliza o título dos artigos */
 article h1 {
-    font-size: 24px; /* Tamanho do título */
-    color: #333; /* Cor cinza escuro */
-    margin: 15px 0; /* Margem superior e inferior */
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
 }
 
 /* Estiliza os parágrafos dentro dos artigos */
 article p {
-    font-size: 16px; /* Tamanho do texto */
-    color: #666; /* Cor cinza médio */
+    font-size: 16px;
+    color: #666;
 }
 
 /* Estiliza o último parágrafo (preço) dos artigos */
 article p:last-child {
-    font-size: 20px; /* Tamanho maior para destaque */
-    color: #ff4500; /* Cor laranja avermelhado */
-    font-weight: bold; /* Texto em negrito */
+    font-size: 20px;
+    color: #ff4500;
+    font-weight: bold;
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    text-align: center; /* Centraliza o conteúdo */
-    padding: 15px; /* Espaçamento interno */
-    background-color: #ff6347; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
 }
 
 /* Responsividade para telas menores que 800px */
 @media (max-width: 800px) {
-    main {
+    #cardapio {
         flex-direction: column; /* Coloca os artigos em coluna */
         align-items: center; /* Centraliza os artigos */
     }
 
     nav ul li a {
-        font-size: 14px; /* Reduz o tamanho do texto de navegação */
+        font-size: 14px;
     }
 
     header .nome h1 {
-        font-size: 20px; /* Reduz o tamanho do título */
+        font-size: 20px;
     }
 }
 
 /* Responsividade para telas menores que 400px */
 @media (max-width: 400px) {
     nav ul li a {
-        font-size: 8px; /* Reduz ainda mais o tamanho do menu */
+        font-size: 8px;
     }
 
     header .nome h1 {
-        font-size: 13px; /* Reduz o tamanho do título */
-    }
-}
-
-/* Ajustes adicionais para telas menores que 200px */
-@media (max-width: 200px) {
-    header {
-        flex-direction: column; /* Empilha os elementos do cabeçalho */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    header .imglogo img {
-        width: 60px; /* Diminui o tamanho da logo */
-    }
-
-    header .nome h1 {
-        font-size: 14px; /* Ajusta o tamanho do título */
-    }
-
-    nav ul li a {
-        font-size: 12px; /* Ajusta o tamanho do menu */
-    }
-
-    main h2 {
-        font-size: 10px; /* Reduz o tamanho dos títulos das seções */
+        font-size: 13px;
     }
 }
